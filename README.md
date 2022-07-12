@@ -73,9 +73,9 @@
 
 - 프로젝트 루트 경로에 `babel.config.js` 생성 후 아래 내용 기입
 
-  ```json
+  ```js
   module.exports = {
-  presets: ['@babel/preset-react', '@babel/preset-env', '@babel/preset-typescript'],
+  	presets: ['@babel/preset-react', '@babel/preset-env', '@babel/preset-typescript'],
   };
   ```
 
