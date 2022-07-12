@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:prettier/recommended",
+    /* eslint-plugin-prettier + eslint-config-prettier 동시 적용 */
+    "prettier/@typescript-eslint"
+    /* prettier 규칙과 충돌하는 @typescript-eslint/eslint-plugin 규칙 비활성화 */
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["dist/", "node_modules/"],
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {}
+}
