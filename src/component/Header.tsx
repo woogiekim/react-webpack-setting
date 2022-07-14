@@ -1,9 +1,14 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import styled from "@emotion/styled";
+
+const StyledHeader = styled.div`
+  background-color: hotpink;
+`
 
 const Header = () => {
     return (
-        <div>
+        <StyledHeader>
             <ul>
                 <li>
                     <Link to='home'>Home</Link>
@@ -12,7 +17,7 @@ const Header = () => {
                     <Link to='test'>Test</Link>
                 </li>
             </ul>
-        </div>
+        </StyledHeader>
     )
 }
 

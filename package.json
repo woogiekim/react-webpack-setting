@@ -13,6 +13,8 @@
   "author": "Woogie Kim <woogie.kim@cyworldlabs.com>",
   "license": "ISC",
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "6"
